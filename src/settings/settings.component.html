@@ -1,0 +1,19 @@
+<form>
+    <label for="language1">Язык 1:</label>
+    <select name="language1" [(ngModel)]="selectedLanguage1">
+        <option *ngFor="let language of languages">{{ language }}</option>
+    </select>
+
+    <label for="language2">Язык 2:</label>
+    <select name="language2" [(ngModel)]="selectedLanguage2">
+        <option *ngFor="let language of languages">{{ language }}</option>
+    </select>
+
+    <label for="numWords">Количество слов в упражнении:</label>
+    <input type="number" name="numWords" [(ngModel)]="numWords">
+
+    <label for="timeLimit">Время на упражнение (мин):</label>
+    <input type="number" name="timeLimit" [(ngModel)]="timeLimit">
+
+    <button type="submit">Сохранить</button>
+</form>

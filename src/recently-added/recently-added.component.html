@@ -1,0 +1,8 @@
+<ul>
+    <li *ngFor="let word of words">{{ word }}</li>
+</ul>
+
+<form (ngSubmit)="addWord(word.value)">
+    <input type="text" name="word" #word>
+    <button type="submit">Добавить</button>
+</form>

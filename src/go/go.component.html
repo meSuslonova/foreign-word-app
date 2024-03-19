@@ -1,0 +1,9 @@
+<p>{{ currentWord }}</p>
+
+<form (ngSubmit)="checkAnswer()">
+    <input type="text" name="answer" #answer>
+    <button type="submit">Ответить</button>
+</form>
+
+<p *ngIf="correct">Правильно!</p>
+<p *ngIf="!correct">Неправильно!</p>
